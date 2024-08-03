@@ -18,6 +18,9 @@ public class TodoList {
     @Id
     private Integer id;
 
+    private boolean isChecked;
+
     @NotEmpty
     private String todo;
+
 }

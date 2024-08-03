@@ -18,8 +18,8 @@ public class TodoListService {
         return todoListRepository.findById(id).orElse(null);
     }
 
-    public TodoList save(@Valid TodoList todo) {
-        return todoListRepository.save(todo);
+    public void save(@Valid TodoList todo) {
+        todoListRepository.save(todo);
     }
 
     public void remove(Integer id) {

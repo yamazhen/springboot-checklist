@@ -9,7 +9,7 @@
 <main>
     <h1 id="title" >Checklist App</h1>
     <form th:action="@{/todolist}" method="post" id="createpost">
-        <input type="text" name="todo" id="todo" placeholder="todo" required>
+        <input type="text" name="todo" id="todo" class="type-input"  placeholder="Todo" required>
         <button type="submit">Create</button>
     </form>
     <ul id="todolist">

@@ -44,16 +44,26 @@ button {
     display: inline-block;
     color: white;
 }
-input {
-    all: unset;
-    box-sizing: border-box;
-    background-color: #343434;
-    border-radius: 15px;
-    padding: 20px 10px;
-    color: white;
-}
 input:placeholder {
     color:gray;
+}
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: none;
+    box-sizing: border-box;
+    background-color: #464646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 999999px;
+}
+input[type="checkbox"]:checked::before {
+    content: '✔';
+    color: white;
+    font-size: 20px;
 }
 #title {
     padding: 20px 0;
@@ -70,15 +80,36 @@ input:placeholder {
 #todo {
     width: 400px;
 }
+#todolist p {
+    padding: 10px;
+}
 .crud-button {
     display: flex;
-    gap: 10px;
     justify-content: center;
     position: relative;
-    right: 15px;
     padding: 10px;
+    gap: 1em;
 }
 .crud-menu {
     display: flex;
     flex-direction: column;
+}
+.update-form {
+    display: flex;
+    gap: 1em;
+}
+.type-input {
+    all: unset;
+    box-sizing: border-box;
+    background-color: #343434;
+    border-radius: 15px;
+    padding: 20px 10px;
+    color: white;
+}
+.todo-content {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
