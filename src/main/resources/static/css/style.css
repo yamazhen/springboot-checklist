@@ -78,8 +78,6 @@ input:placeholder {
     right: 15px;
     padding: 10px;
 }
-.edit-container {
-}
 .crud-menu {
     display: flex;
     flex-direction: column;
