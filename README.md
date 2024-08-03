@@ -1,5 +1,7 @@
-#Checklist Web App Made with Spring Boot
+# Checklist Web App Made with Spring Boot
 
-##Todo:
+## Todo:
+
 Create Authentication Services
+
 Secure the APIs
